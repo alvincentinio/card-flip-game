@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: lightblue url("bgimage.jpg") no-repeat fixed center;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .grid-container {
@@ -18,7 +19,7 @@ body {
 }
 
 .grid-item {
-  border: 0px solid rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 .justify-left {
@@ -31,6 +32,8 @@ body {
 
 .justify-center {
   text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
 }
 
 .timer {
@@ -43,8 +46,9 @@ body {
   width: 15em;
   height: 3em;
   color: white;
-  background-color: #5168e9;
-  border: 0;
+  background-color: #1133f5;
+  border: 0px;
+  font-size: 0.8em;
 }
 
 .game-status-text {
@@ -54,8 +58,8 @@ body {
 }
 
 .card {
-  width: 95%;
-  height: 10em;
+  width: 100%;
+  height: 8em;
   background-color: rgb(219, 45, 176);
   color: white;
   font-size: 15px;
@@ -66,7 +70,10 @@ body {
 }
 
 .card-front {
-  background-color: #36e744;
+  background: #36e744 url("catimage.jpg") no-repeat fixed center;
+  font-size: 15px;
+  width: 100%;
+  height: 8em;
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
 
@@ -75,5 +82,5 @@ body {
 }
 
 .react-card-front {
-  position: unset !important;
+  /* position: unset !important; */
 }
