@@ -1,14 +1,13 @@
 body {
   margin: 0;
-  background: lightblue url("bgimage.jpg") no-repeat fixed center;
-  font-family: "Courier New", Courier, monospace;
+  background: rgb(253, 253, 253) url("bgimage.jpg") no-repeat fixed center;
 }
 
 .grid-container {
   display: grid;
   grid-gap: 8px;
   grid-template-columns: auto auto auto auto;
-  padding: 10px 150px 10px 150px;
+  padding: 20px 160px 20px 160px;
 }
 
 .grid-header-container {
@@ -59,7 +58,7 @@ body {
 
 .card {
   width: 100%;
-  height: 8em;
+  height: 7.5em;
   background-color: rgb(219, 45, 176);
   color: white;
   font-size: 15px;
@@ -70,10 +69,10 @@ body {
 }
 
 .card-front {
-  background: #36e744 url("catimage.jpg") no-repeat fixed center;
+  background: #2f32e6 url("catimage.jpg") no-repeat fixed center;
   font-size: 15px;
   width: 100%;
-  height: 8em;
+  height: 7.5em;
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.6);
 }
 
