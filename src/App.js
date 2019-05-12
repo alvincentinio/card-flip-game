@@ -14,7 +14,8 @@ class App extends PureComponent {
     prevCardId: -1,
     player1Score: 0,
     player2Score: 0,
-    currentPlayer: 1
+    currentPlayer: 1,
+    bgImage: "cat"
   };
 
   static duplicateCard = () => {
@@ -115,6 +116,9 @@ class App extends PureComponent {
       return "It's a Draw !!!";
     }
   };
+  changeBgImage = event => {
+    this.setState({ bgImage: event.target.value });
+  };
 
   render() {
     return (
@@ -124,6 +128,7 @@ class App extends PureComponent {
           player1Score={this.state.player1Score}
           player2Score={this.state.player2Score}
           currentPlayer={this.state.currentPlayer}
+          changeBgImage={this.changeBgImage}
         />
         {this.isGameOver() ? (
           <GameOver restartGame={this.restartGame} winner={this.getWinner()} />
@@ -136,6 +141,7 @@ class App extends PureComponent {
                 cardNumber={cardNumber}
                 isFlipped={this.state.isFlipped[index]}
                 handleClick={this.handleClick}
+                bgImage={this.state.bgImage}
               />
             ))}
           </div>
