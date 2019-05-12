@@ -1,10 +1,11 @@
 import React from "react";
 
-const GameOver = ({ restartGame }) => (
+const GameOver = ({ restartGame, winner }) => (
   <div className="justify-center">
-    <h1>Game Over!</h1>
+    <h1 className="animated bounceInLeft">Game Over!</h1>
+    <h3>{winner}</h3>
     <button className="restart-button" onClick={restartGame}>
-      Restart Game
+      Play Again
     </button>
   </div>
 );

@@ -1,13 +1,15 @@
 body {
   margin: 0;
   background: rgb(253, 253, 253) url("bgimage.jpg") no-repeat fixed center;
+  background-size: auto;
 }
 
 .grid-container {
   display: grid;
   grid-gap: 8px;
   grid-template-columns: auto auto auto auto;
-  padding: 20px 160px 20px 160px;
+  /* padding: 20px 160px 20px 160px; */
+  padding: 5vw 13vw 5vw 13vw;
 }
 
 .grid-header-container {
@@ -36,13 +38,14 @@ body {
 }
 
 .timer {
-  color: #5168e9;
+  color: #ffffff;
+  font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   font-weight: bold;
 }
 
 .restart-button {
-  width: 15em;
+  width: 8em;
   height: 3em;
   color: white;
   background-color: #1133f5;
@@ -51,9 +54,10 @@ body {
 }
 
 .game-status-text {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: rgb(24, 21, 16);
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  /* color: rgb(24, 21, 16); */
   font-weight: bold;
+  font-size: 20px;
 }
 
 .card {
