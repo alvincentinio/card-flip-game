@@ -23,7 +23,7 @@ const Header = ({
             <option value="cat">Cat</option>
             <option value="puppy">Puppy</option>
             <option value="spaceman">Spaceman</option>
-            <option value="orlaith">Orlaith</option>
+            {/* <option value="orlaith">Orlaith</option> */}
           </select>
         </span>
       </form>
