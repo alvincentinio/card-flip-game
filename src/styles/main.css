@@ -93,6 +93,10 @@ body {
   background: #2f32e6 url("puppyimage2.jpg") no-repeat fixed center;
   background-size: cover;
 }
+.city {
+  background: #2f32e6 url("city.jpg") no-repeat fixed center;
+  background-size: cover;
+}
 /* .orlaith {
   background: #2f32e6 url("orlaith.jpg") no-repeat fixed center;
   background-size: cover;
